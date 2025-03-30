@@ -84,11 +84,12 @@ Remove the value there and replace it with what you copied.
 Now, you need to commit and push that change to GitHub.
 The commit will be fine, but when you try to push, it will block it because there is a password in plain text (because you just put it there).
 In the error message there will be a url you need to go to to unblock it.
-##### not the first url you see (the one with "docs" in it), but the second one, something like https://github.com/yourGitHubUsername/repositoryName/security/secret-scanning/unblock-secretlongString
+##### not the first url you see (the one with "docs" in it), but the second one, something like https://github.com/yourGitHubUsername/repositoryName/security/secret-scanning/unblock-secret/longString
 
 Since this is a small project that will not be released (expect on this github repo), you can choose "It's used in tests". No harm can be done with this application, at least not when it is in this form.
 
 When you expand on this project and more data gets saved or something else, there could be harm if someone finds the password. In that case, of course you preferably fix it, but if you really need to push changes, you can choose "I'll fix it later". This alerts admins of a possible security risk, so no one can forget about this.
+![githubblock](https://i.imgur.com/fGSUAjy.png)
 
 ### Deploying the container
 Finally, when the push worked correctly, run:
