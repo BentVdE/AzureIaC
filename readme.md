@@ -1,7 +1,7 @@
 # Azure Infrastructure-as-Code
 
 ### Design Diagram
-<!--insert image here-->
+![diagram](https://i.imgur.com/e8Stu74.png)
 
 ### Docker
 First, make a Dockerfile.
