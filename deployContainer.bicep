@@ -63,7 +63,7 @@ resource containerGroup 'Microsoft.ContainerInstance/containerGroups@2023-05-01'
       {
         server: 'bvdeass2containerregistry.azurecr.io'
         username: 'pullToken'
-        password: '34RxCyiJ3xDwuFIpJc+xmx/WM3GylPUSwW35wzTBNn+ACRASF2Nw'
+        password: 'k4k+7lesHfS24iqRHNJz+8z035c33sDZQXGdg/3TcO+ACRALFzkw'
       }
     ]
   }
@@ -73,3 +73,4 @@ output name string = containerGroup.name
 output resourceGroupName string = resourceGroup().name
 output resourceId string = containerGroup.id
 output location string = location
+output ipAddress string = containerGroup.properties.ipAddress.ip
