@@ -84,7 +84,7 @@ Remove the value there and replace it with what you copied.
 Now, you need to commit and push that change to GitHub.
 The commit will be fine, but when you try to push, it will block it because there is a password in plain text (because you just put it there).
 In the error message there will be a url you need to go to to unblock it.
-##### not the first url you see (the one with "docs" in it), but the second one, something like https://github.com/<yourGitHubUsername>/<repositoryName>/security/secret-scanning/unblock-secret/<longString>
+##### not the first url you see (the one with "docs" in it), but the second one, something like https://github.com/yourGitHubUsername/repositoryName/security/secret-scanning/unblock-secretlongString
 
 Since this is a small project that will not be released (expect on this github repo), you can choose "It's used in tests". No harm can be done with this application, at least not when it is in this form.
 
@@ -98,7 +98,7 @@ az deployment group create --resource-group bvde-Ass2ResourceGroup --template-fi
 
 Now, similarly to how you had to look for outputs for the login server earlier, this time you need to look for the IP address. The word "outputs" will be somewhere a little above the middle of the command's output.
 
-Look for "ipAddress", then type the address in your browser's search bar. It should work, but if it doesn't, try typing "http://<ipAddres>:80".
+Look for "ipAddress", then type the address in your browser's search bar. It should work, but if it doesn't, try typing "http://ipAddres:80".
 
 If you cant find it, you can also go to your Azure portal and look for the container instance. Click on it and it will show you the IP address somewhere (see image).
 ![azureportal](https://i.imgur.com/ZJuDSZm.png)
