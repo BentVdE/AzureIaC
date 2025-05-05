@@ -5,7 +5,7 @@ param containerName string = 'bvde-flask-container'
 param location string = resourceGroup().location
 
 @description('Specify which container image to deploy')
-param image string = 'bvdeass2containerregistry.azurecr.io/bvde-assignment2-flasktask:latest'
+param image string = 'bvdeass2cronctainerregistry.azurecr.io/bvde-assignment2-flasktask:latest'
 
 @description('Specify which port to open on the container')
 param port int = 80
@@ -61,7 +61,7 @@ resource containerGroup 'Microsoft.ContainerInstance/containerGroups@2023-05-01'
     }
     imageRegistryCredentials: [
       {
-        server: 'bvdeass2containerregistry.azurecr.io'
+        server: 'bvdeass2cronctainerregistry.azurecr.io'
         username: 'pullToken'
         password: 'ZqHnE3pn0aDh5d8chiH0uSTnnVKlYvbD1Rn5KTRYvb+ACRDE5yqK'
       }
