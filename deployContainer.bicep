@@ -63,7 +63,7 @@ resource containerGroup 'Microsoft.ContainerInstance/containerGroups@2023-05-01'
       {
         server: 'bvdeass2cronctainerregistry.azurecr.io'
         username: 'pullToken'
-        password: 'ZqHnE3pn0aDh5d8chiH0uSTnnVKlYvbD1Rn5KTRYvb+ACRDE5yqK'
+        password: '8NgwNQqZk6uNEicrszaHFag+o599JsK8rJITcM3YT7+ACRBZ424z'
       }
     ]
   }
